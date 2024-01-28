@@ -3,13 +3,13 @@ Dot.__index = Dot
 
 local player = game.Players.LocalPlayer
 
-function Dot.new(uiElement, serial, centralUI, sizeMultiplier, speed, perspective, radius)
+function Dot.new(uiElement, serial, centralUI, sizeMultiplier, speed, perspective, radius, n)
 	local self = setmetatable({}, Dot)
 	self.uiElement = uiElement
 	self.originalSize = uiElement.Size
 	self.radius = radius or 0.8
 	self.theta = 0
-	local phiStep = math.pi / 5
+	local phiStep = math.pi / n
 	self.phi = phiStep * serial + serial 
 	self.central = centralUI
 	self.sizeMultiplier = sizeMultiplier
