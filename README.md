@@ -7,6 +7,34 @@ https://create.roblox.com/store/asset/16151925204/Dot
 # Showcase
 [![Watch the video](https://img.youtube.com/vi/LpYMHcKd4BA/maxresdefault.jpg)](https://youtu.be/LpYMHcKd4BA)
 
+# API
+## Constructor: 
+```lua
+Dot.new(uiElement, serial, centralUI, sizeMultiplier, speed, perspective, radius)
+```
+Parameters:
+* uiElement (UI element): The UI element that represents the dot.
+* serial (Number): An identifier or sequential number for the dot.
+* centralUI (UI element): The central UI element used as a reference for positioning.
+* sizeMultiplier (Number): Multiplier to scale the size of the dot.
+* speed (Number): The speed at which the dot moves.
+* perspective (Number): The perspective value used for 3D projection.
+* radius (Number, optional): The radius of the dot's movement. Default is 0.8.
+
+Returns:
+* A new instance of the Dot Class.
+
+## Methods:
+```lua
+Dot:Project(deltaTime, speed)
+```
+Parameters:
+* deltaTime (Number): The change in time, used to calculate movement.
+* speed (Number): Speed factor for the dot's movement.
+
+Returns:
+None
+
 # Usage
 ```lua
 local RunService = game:GetService("RunService")
