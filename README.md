@@ -20,6 +20,7 @@ Parameters:
 * speed (Number): The speed at which the dot moves.
 * perspective (Number): The perspective value used for 3D projection.
 * radius (Number, optional): The radius of the dot's movement. Default is 0.8.
+* n (Number): The Number of elements.
 
 Returns:
 * A new instance of the Dot Class.
@@ -56,7 +57,7 @@ local angleIncrement = (2 * math.pi) / 5
 
 local dots = {}
 for i, info in orbitingUIs do
-	local dot = Dot.new(info.Element, i, centralUI, 1.3, 1.5, 0.8, nil)
+	local dot = Dot.new(info.Element, i, centralUI, 1.3, 1.5, 0.8, nil, 5)
 	dot.theta = i
 	table.insert(dots, dot)
 end
