@@ -62,10 +62,10 @@ for i, info in orbitingUIs do
 	table.insert(dots, dot)
 end
 
-local lastUpdateTime = tick()
+local lastUpdateTime = time()
 
 local function update()
-	local currentTime = tick()
+	local currentTime = time()
 	local deltaTime = currentTime - lastUpdateTime
 	lastUpdateTime = currentTime
 	for _, dot in dots do
