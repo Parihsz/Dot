@@ -39,7 +39,7 @@ None
 # Usage
 ```lua
 local RunService = game:GetService("RunService")
-local Dot = require(script:WaitForChild("Dot"))
+local Dot = require(script.Dot)
 
 local player = game.Players.LocalPlayer
 
